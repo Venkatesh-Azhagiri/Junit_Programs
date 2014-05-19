@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="com.javatpoint.mypackage.Employee" table="employee">
+
+<id name="employeeId" column="employee_id"  >
+<generator class="increment" />
+</id>
+
+<property name="employeeName" column="employee_name" length="10"/>
+<property name="designation" column="designation"/>
+
+</class>
+</hibernate-mapping>
